@@ -16,4 +16,4 @@ hist(normed.df$normal)
 joined <- rbind(normed.df, normed.df2)
 
 ggplot(data=joined) +
-  geom_density(aes(x=normal,group=var,fill=var))
+  geom_density(aes(x=normal,group=var,fill=var)) + labs(title="Two Normal Distributions")
